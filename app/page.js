@@ -38,7 +38,7 @@ export default function HomePage() {
           </div>
         </section>
         <section className={styles.ukmRoles}>
-  <h2>Untuk Siapa Aplikasi Ini?</h2>
+  <h2>Untuk Apa Aplikasi Ini?</h2>
   <p>Dirancang untuk mendukung kegiatan dan manajemen UKM di kampus</p>
   <div className={styles.ukmRolesGrid}>
     <div className={styles.ukmRoleCard}>
