@@ -1,0 +1,1 @@
+INSERT INTO "public"."pendaftaran" ("id", "nama", "nim", "prodi", "fakultas", "semester", "ukm", "status", "created_at") VALUES ('1928941a-5132-4264-b4ed-7cc4d55b3441', 'Husnul', '2323022', 'Komputerisasi Akuntansi', 'Komputer', '4', 'Basket', 'diterima', '2025-06-22 15:28:37.446454+00');
