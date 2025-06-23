@@ -1,0 +1,122 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #881337; /* Maroon */
+  padding: 1rem 2rem;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.logoIcon {
+  margin-right: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+  overflow-x: auto;
+  white-space: nowrap;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.menu::-webkit-scrollbar {
+  display: none;
+}
+
+.menu li a {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.3rem 0.6rem;
+  border-radius: 6px;
+  transition: background 0.2s ease;
+  font-size: 0.9rem;
+}
+.menuOpen {
+  display: flex !important;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.menu li a:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.menuItem {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  font-size: 1.1rem;
+}
+
+.sectionTitle {
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.sectionDesc {
+  text-align: center;
+  color: #e5e7eb;
+  font-size: 0.95rem;
+}
+
+.hamburger {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.active a {
+  background-color: rgba(255, 255, 255, 0.25);
+  font-weight: bold;
+  border-radius: 6px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav {
+    flex-wrap: wrap;
+    padding: 1rem;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: #881337;
+    width: 100%;
+    padding: 1rem;
+    position: absolute;
+    top: 64px;
+    left: 0;
+  }
+
+  .menuOpen {
+    display: flex;
+  }
+
+  .menu li a {
+    justify-content: flex-start;
+  }
+}

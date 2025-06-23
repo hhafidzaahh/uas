@@ -1,0 +1,42 @@
+.previewSection {
+  margin: 3rem auto;
+  padding: 2rem;
+  background: #fff8f0;
+  border-radius: 10px;
+  max-width: 700px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+.rankingList {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+.rankingList li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.rank {
+  width: 2rem;
+}
+
+.ukmName {
+  flex: 1;
+  text-align: left;
+}
+
+.count {
+  font-weight: bold;
+}
+
+.linkLihat {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #2563eb;
+  text-decoration: underline;
+}

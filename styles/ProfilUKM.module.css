@@ -1,0 +1,88 @@
+.container {
+  padding: 2rem 1rem;
+  background: linear-gradient(to bottom right, #fff1f2, #ffe4e6);
+  min-height: 100vh;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #1f2937;
+}
+
+.ukmGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem; /* Tambah jarak antar card */
+}
+
+.card {
+  padding: 1.25rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  transition: transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%; /* Biar semua card rata tinggi */
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.card h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  color: #111827;
+}
+
+.card p {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin: 0; /* Supaya tidak menambah tinggi */
+}
+.button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  color: rgb(6, 82, 136);
+  border: none;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #ffffffbf;
+}
+
+/* ==== Responsive ==== */
+@media (max-width: 480px) {
+  .container {
+    padding: 1.25rem 1rem;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .card {
+    padding: 1rem;
+  }
+
+  .card h3 {
+    font-size: 1rem;
+  }
+
+  .card p {
+    font-size: 0.8rem;
+  }
+}

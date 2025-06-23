@@ -1,0 +1,42 @@
+/* styles/ValidasiPage.module.css */
+.container {
+  padding: 2rem 3rem;
+  margin: 0 auto;
+  background: linear-gradient(to bottom right, #fff1f2, #ffe4e6);
+  min-height: 100vh;
+}
+
+.tabel {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  margin-top: 1.5rem;
+}
+
+.tabel th,
+.tabel td {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+.aksiBtn {
+  margin-right: 0.5rem;
+  padding: 0.25rem 0.75rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: white;
+}
+
+.aksiBtn:hover {
+  opacity: 0.85;
+}
+
+.btnTerima {
+  background-color: #4caf50; /* Terima */
+}
+
+.btnTolak {
+  background-color: #f44336; /* Tolak */
+}

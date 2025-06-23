@@ -1,0 +1,353 @@
+.container {
+  padding: 2rem 3rem;
+  margin: 0 auto;
+  background: linear-gradient(to bottom right, #fff1f2, #ffe4e6);
+  min-height: 100vh;
+}
+
+.heading {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #1f2937;
+}
+
+.subheading {
+  color: #374151;
+  margin-bottom: 1.5rem;
+}
+
+.section {
+  margin-bottom: 2rem;
+}
+
+.sectionTitle {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #111827;
+}
+
+.memberList {
+  list-style: none;
+  padding-left: 0;
+}
+
+.memberItem {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 0.75rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.uploadBox {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.uploadInput {
+  display: block;
+}
+
+.button {
+  margin-left: auto;
+  background-color: #2563eb;
+  color: white;
+  padding: 0.4rem 0.8rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.button:hover {
+  background-color: #1e40af;
+}
+.editButton {
+  margin-left: auto;
+  background: #3b82f6;
+  border: none;
+  color: white;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.editButton:hover {
+  background: #2563eb;
+}
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  max-width: 400px;
+  width: 90%;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form input {
+  padding: 0.6rem;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  width: 100%;
+  font-size: 0.95rem;
+}
+
+.formActions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}
+
+.cancelBtn {
+  background: #ef4444;
+  color: white;
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.cancelBtn:hover {
+  background: #dc2626;
+}
+.deleteButton {
+  background-color: #ef4444;
+  color: white;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.deleteButton:hover {
+  background-color: #dc2626;
+}
+.agendaList {
+  list-style: none;
+  padding-left: 0;
+}
+
+.agendaItem {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 0.75rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.agendaItem div {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.agendaItem strong {
+  color: #1f2937;
+}
+/* Form Agenda */
+.agendaForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+  background: rgb(253, 253, 253);
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px #1b161618;
+}
+
+/* Input dalam Form Agenda */
+.agendaForm input {
+  padding: 0.6rem;
+  border: 1px solid #a6a1a1;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  width: 100%;
+}
+
+/* Tombol aksi dalam form */
+.agendaForm .formActions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}
+
+.menuCard:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.menuCard span {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.menuCard h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0;
+}
+.textarea {
+  padding: 0.6rem;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  width: 100%;
+  resize: vertical;
+}
+.sectionSpacing {
+  margin-top: 2rem;
+}
+.attendanceTable {
+  width: 100%;
+  background-color: #c1e7f2;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.attendanceTable th,
+.attendanceTable td {
+  border: 1px solid #8aa2c6;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.attendanceTable th {
+  background-color: #eef2f9;
+  font-weight: 600;
+}
+.statItem {
+  background: white;
+  padding: 0.8rem 1rem;
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+.statsGrid {
+  display: flex;
+  flex-wrap: wrap;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.statCard {
+  background-color: #eef4ff;
+  border: 1px solid #d1e3ff;
+  padding: 1rem;
+  border-radius: 1rem;
+  flex: 1 1 200px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.statCard:hover {
+  transform: translateY(-3px);
+}
+
+.statLabel {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 0.4rem;
+}
+
+.statValue {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2b2b2b;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .heading {
+    font-size: 1.4rem;
+  }
+  .memberItem input {
+    width: 100%;
+  }
+  .button {
+    width: 100%;
+    margin-left: 0;
+  }
+  .memberItem {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .uploadBox {
+    padding: 1rem 0.75rem;
+  }
+  .uploadInput {
+    width: 100%;
+  }
+  .agendaItem {
+    font-size: 0.95rem;
+  }
+
+  .agendaItem div {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .editButton {
+    width: 100%;
+    margin-top: 0.5rem;
+    margin-left: 0;
+  }
+  .deleteButton {
+    width: 100%;
+    margin-top: 0.5rem;
+    margin-left: 0;
+  }
+  .agendaForm {
+    padding: 1rem 0.75rem;
+  }
+
+  .agendaForm .formActions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .agendaForm button {
+    width: 100%;
+  }
+  .kehadiranTable {
+    font-size: 0.85rem;
+  }
+}

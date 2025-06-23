@@ -1,0 +1,98 @@
+/* styles/DashboardAdmin.module.css */
+.container {
+  flex: 1;
+  padding: 2rem;
+}
+.layoutWrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #fff1f2, #ffe4e6);
+}
+.title {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #800020;
+  font-weight: bold;
+}
+.subheading {
+  font-size: 1rem;
+  color: #6b7280;
+  margin-top: -1rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.agendaSection {
+  margin-top: 3rem;
+}
+.sectionTitle {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.agendaTable {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  box-shadow: 0 1px 3px rgb(186, 110, 110);
+}
+.agendaTable th,
+.agendaTable td {
+  padding: 0.75rem 1rem;
+  border: 1px solid #e5e7eb;
+  text-align: left;
+}
+.agendaTable th {
+  background-color: #a7c0f3;
+}
+.chartSection {
+  margin-top: 3rem;
+}
+
+.chartWrapper {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.card {
+  flex: 1 1 200px;
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 6px rgb(166, 114, 114);
+  text-align: center;
+}
+
+.cardTitle {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.cardSubtitle {
+  margin: 0.5rem 0 0;
+  color: #666;
+}
+
+.links a {
+  display: inline-block;
+  margin-right: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #800020;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.links a:hover {
+  background-color: #a0002e;
+}

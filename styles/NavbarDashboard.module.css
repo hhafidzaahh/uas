@@ -1,0 +1,111 @@
+/* components/NavbarDashboard.module.css */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #881337;
+  padding: 1rem 2rem;
+  color: white;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+.sectionTitle {
+  font-size: 1.1rem;
+  text-align: center;
+}
+.menuItem {
+  display: flex;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.menuItem:hover {
+  opacity: 0.8;
+}
+
+.icon {
+  margin-right: 0.5rem;
+  font-size: 1.1rem;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.logoIcon {
+  margin-right: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.menu li a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.sectionDesc {
+  text-align: center;
+  color: #6b7280;
+  font-size: 0.95rem;
+}
+.hamburger {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .section {
+    padding: 1rem;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+  .hamburger {
+    display: block;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: #881337;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    padding: 1rem 2rem;
+  }
+
+  .menuOpen {
+    display: flex;
+  }
+}
+.active a {
+  background-color: rgba(255, 255, 255, 0.25);
+  font-weight: bold;
+  border-radius: 6px;
+}

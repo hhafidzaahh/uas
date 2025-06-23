@@ -1,0 +1,318 @@
+.main {
+  padding: 2rem;
+  background: linear-gradient(to bottom right, #fff1f2, #ffe4e6); 
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+  padding: 0 1rem;
+  width: 100%;
+  max-width: 1100px;
+}
+
+.card {
+  flex: 1 1 300px;
+  background: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.hero {
+  text-align: center;
+  margin-top: 1.5rem;
+  max-width: 700px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  color: #1f2937;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  color: #4b5563;
+  margin-bottom: 2rem;
+}
+.features {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.features h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.25rem;
+  color: #1f2937;
+}
+
+.features p {
+  margin-top: 0;
+  color: #4b5563;
+}
+
+.cta {
+  display: inline-block;
+  background-color: #790c32db;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.ukmRoles {
+  margin-top: 5rem;
+  text-align: center;
+}
+
+.ukmRoles h2 {
+  font-size: 2rem;
+  color: #1f2937;
+  margin-bottom: 1rem;
+}
+
+.ukmRolesGrid {
+  display: flex;
+  justify-content: center;
+  gap: 8rem; /* untuk desktop */
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  padding: 0 2rem;
+}
+
+.ukmRoleCard {
+  text-align: center;
+  max-width: 250px;
+  flex: 1 1 300px;
+}
+
+.ukmRoleCard p {
+  color: #6b7280;
+  margin-top: 0.3rem;
+}
+
+/* === Statistik Nempel ke Halaman === */
+.ukmStats {
+  margin-top: 4rem;
+  padding: 2rem 1rem;
+  width: 100%;
+  text-align: center;
+  background: linear-gradient(to right, #f43f5e, #ec4899); /* pink gradasi */
+  border-radius: 1rem;
+  color: white;
+}
+
+.ukmStatsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  padding: 0 1rem;
+}
+
+.ukmStatsItem {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+.ukmStatsItem span {
+  display: block;
+  font-size: 0.95rem;
+  font-weight: normal;
+  color: #ffeef3;
+}
+
+/* === Profil Pembuat Modern === */
+.ukmProfile {
+  background: #881337;
+  color: white;
+  padding: 3rem 2rem;
+  text-align: center;
+  margin-top: 4rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: fadeInUp 0.8s ease-in-out both;
+}
+
+.ukmProfile h3 {
+  font-size: 1.8rem;
+  margin-bottom: 2.5rem;
+  margin-top: 1rem; 
+  color: #f7cce3; 
+}
+
+.profileCard {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: left;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.profileImage {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #f9a8d4;
+}
+
+.profileText {
+  flex: 1;
+  min-width: 250px;
+  color: #fbd0dc;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.profileName {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+
+.profileText a {
+  color: #f9a8d4;
+  text-decoration: underline;
+}
+
+.profileDivider {
+  margin: 3rem auto 2rem;
+  width: 80%;
+  height: 3px;
+  border: none;
+  background: linear-gradient(to right, #f43f5e, #ec4899);
+  border-radius: 4px;
+}
+
+.profileBio {
+  max-width: 1000px;
+  margin: 0 auto;
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #fce7ef;
+  padding: 0 1rem;
+  text-align: justify;
+}
+
+.profileBio p {
+  margin-bottom: 1rem;
+}
+.socialLinks {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.socialLinks a {
+  background-color: #f9a8d4;
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  color: #881337;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s, color 0.3s;
+}
+
+.socialLinks a:hover {
+  background-color: #fda4af;
+  color: #6b021a;
+}
+.socialIcons {
+  display: flex;
+  gap: 0.75rem;        /* jarak antar ikon */
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.socialIcons a { 
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffd8ee;
+  font-size: 1.2rem;
+  transition: background 0.3s, transform 0.3s;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+  text-decoration: none;
+}
+
+.socialIcons a:hover {
+  background-color: #f9a8d4;
+  color: rgb(255, 255, 255);
+  transform: translateY(-3px);
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+.ukmRolesGrid {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;         /* ubah dari 0.2rem ke 1.5rem agar nyaman dilihat */
+    padding: 0 1rem;
+    margin-top: 1.5rem;  /* tambahkan jarak atas */
+  }
+  .ukmRoleCard {
+    max-width: 100%;
+    flex: 1 1 100%;
+  }
+  .ukmStatsGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .ukmStatsItem {
+    font-size: 1.2rem;
+  }
+  .profileCard {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profileText {
+    text-align: center;
+  }
+}
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
