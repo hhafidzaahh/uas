@@ -55,10 +55,12 @@
 .button:hover {
   background-color: #db2777;
 }
+
 .main {
   padding: 2rem;
-  background: linear-gradient(to bottom right, #fff1f2, #ffe4e6); /* pink elegant */
+  background: linear-gradient(to bottom right, #fff1f2, #ffe4e6);
   min-height: 100vh;
+  color: #1f2937;
 }
 
 .header {
@@ -83,8 +85,7 @@
   gap: 1.5rem;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 2rem 0;
-  margin-bottom: 2rem;
+  margin: 2rem 0 2rem 0;
 }
 
 .card {
@@ -102,9 +103,11 @@
   transform: translateY(-4px);
   background: #e0f2fe;
 }
+
 .agendaList {
   padding-left: 1rem;
 }
+
 .agendaItem {
   margin-bottom: 1rem;
   background: #fff;
@@ -112,6 +115,7 @@
   border-left: 4px solid #38bdf8;
   border-radius: 5px;
 }
+
 .chartWrapper {
   background: #fff;
   padding: 2rem;
@@ -122,7 +126,7 @@
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  height: 400px; /* ⬅️ ini penting untuk Chart.js agar bisa tinggi penuh */
+  height: 400px;
 }
 
 .cardTitle {
@@ -137,6 +141,7 @@
   color: #6b7280;
   margin-top: 0.25rem;
 }
+
 .button {
   display: inline-block;
   margin-top: 1rem;
@@ -179,44 +184,29 @@
     text-align: center;
   }
 }
+
+/* Kunci tampilan agar tidak berubah saat dark mode */
 @media (prefers-color-scheme: dark) {
-  .main, .container, body {
-    background: linear-gradient(to bottom right, #fff1f2, #ffe4e6) !important;
-    color: #1f2937 !important;
+  .main,
+  .container,
+  .section,
+  .card,
+  .agendaItem,
+  .chartWrapper,
+  body {
+    background: inherit !important;
+    color: inherit !important;
   }
-  .card, .agendaItem, .section, .chartWrapper {
+
+  .card,
+  .agendaItem,
+  .section,
+  .chartWrapper {
     background-color: white !important;
     color: #1f2937 !important;
   }
-  .welcome,
-  .cardTitle {
-    color: #f9fafb;
-  }
-  .userInfo,
-  .subtitle,
-  .cardDesc {
-    color: #d1d5db;
-  }
-  .card {
-    background: #1e293b;
-    color: #f9fafb;
-  }
 
   .card:hover {
-    background: #334155;
-  }
-
-  .agendaItem {
-    background: #1e293b;
-    color: #f9fafb;
-  }
-
-  .section {
-    background: #111827;
-  }
-
-  .chartWrapper {
-    background: #1f2937;
+    background: #e0f2fe !important;
   }
 }
-
