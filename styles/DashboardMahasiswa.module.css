@@ -184,39 +184,3 @@
     text-align: center;
   }
 }
-/* Matikan pengaruh dark mode otomatis */
-@media (prefers-color-scheme: dark) {
-  html,
-  body,
-  .main,
-  .container,
-  .section,
-  .card,
-  .agendaItem,
-  .chartWrapper,
-  .title,
-  .subtitle,
-  .welcome,
-  .userInfo,
-  .cardTitle,
-  .cardDesc {
-    background: inherit !important;
-    background-color: inherit !important;
-    color: #1f2937 !important;
-  }
-
-  .card {
-    background-color: #f0f9ff !important;
-  }
-
-  .card:hover {
-    background-color: #e0f2fe !important;
-  }
-
-  .agendaItem,
-  .section,
-  .chartWrapper {
-    background-color: white !important;
-  }
-}
-
