@@ -315,4 +315,47 @@
     transform: translateY(0);
   }
 }
+@media (prefers-color-scheme: dark) {
+  body, html, .main, .hero, .features, .ukmRoles, .ukmStats, .ukmProfile,
+  .card, .ukmRoleCard, .ukmStatsItem, .profileCard, .profileBio {
+    background: inherit !important;
+    background-color: inherit !important;
+    color: #1f2937 !important;
+  }
 
+  .hero h1,
+  .features h2,
+  .ukmRoles h2,
+  .profileName {
+    color: #1f2937 !important;
+  }
+
+  .hero p,
+  .features p,
+  .ukmRoleCard p,
+  .profileText,
+  .profileBio {
+    color: #4b5563 !important;
+  }
+
+  .ukmStats {
+    background: linear-gradient(to right, #f43f5e, #ec4899) !important;
+    color: white !important;
+  }
+
+  .profileBio {
+    color: #fce7ef !important;
+  }
+
+  .socialIcons a {
+    color: #ffd8ee !important;
+  }
+
+  .card {
+    background-color: white !important;
+  }
+
+  .ukmProfile {
+    background-color: #881337 !important;
+  }
+}
