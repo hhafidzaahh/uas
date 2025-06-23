@@ -179,4 +179,44 @@
     text-align: center;
   }
 }
+/* Dark mode overrides */
+@media (prefers-color-scheme: dark) {
+  .main {
+    background: linear-gradient(to bottom right, #1f2937, #111827); /* background gelap */
+    color: #f9fafb;
+  }
+
+  .welcome,
+  .cardTitle {
+    color: #f9fafb;
+  }
+
+  .userInfo,
+  .subtitle,
+  .cardDesc {
+    color: #d1d5db;
+  }
+
+  .card {
+    background: #1e293b;
+    color: #f9fafb;
+  }
+
+  .card:hover {
+    background: #334155;
+  }
+
+  .agendaItem {
+    background: #1e293b;
+    color: #f9fafb;
+  }
+
+  .section {
+    background: #111827;
+  }
+
+  .chartWrapper {
+    background: #1f2937;
+  }
+}
 
