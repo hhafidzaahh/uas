@@ -184,10 +184,9 @@
     text-align: center;
   }
 }
-
-/* Kunci tampilan agar tidak berubah saat dark mode */
-/* Mencegah dark mode otomatis */
+/* Matikan pengaruh dark mode otomatis */
 @media (prefers-color-scheme: dark) {
+  html,
   body,
   .main,
   .container,
@@ -201,8 +200,8 @@
   .userInfo,
   .cardTitle,
   .cardDesc {
-    background: unset !important;
-    background-color: unset !important;
+    background: inherit !important;
+    background-color: inherit !important;
     color: #1f2937 !important;
   }
 
@@ -220,3 +219,4 @@
     background-color: white !important;
   }
 }
+
