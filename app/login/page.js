@@ -44,7 +44,7 @@ export default function LoginPage() {
       <main className={styles.container}>
         <form onSubmit={handleLogin} className={styles.form}>
           <h2 style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', justifyContent: 'center' }}>
-            <AiOutlineLogin size={28} /> Login Akun UKM
+            <AiOutlineLogin size={28} /> Login Sistem Informasi UKM
           </h2>
 
           <input
