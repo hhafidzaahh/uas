@@ -11,7 +11,7 @@ export default function HomePage() {
       <Navbar />
       <main className={styles.main}>
         <section className={styles.hero}>
-          <h1>Sistem Informasi UKM Mahasiswa</h1>
+          <h1>Sistem Informasi UKM</h1>
           <p>Platform digital untuk mengelola informasi dan kegiatan UKM di kampus.</p>
           <a href="/login" className={styles.cta}>Login untuk Memulai</a>
         </section>
